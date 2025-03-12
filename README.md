@@ -17,9 +17,14 @@ web application dynamically updates product listings, search results and rental 
 offering a one-stop platform to find and list powertools!
 
 # Programming Tools Used
-
 - Javascript with Vue.js framework [Contributed]
 - Bootstrap / CSS for webpage styling [Contributed]
 - Firestore integration for Cloud Database [Collaborated with Melvin Leck]
 - Node.js [Credit: Alyssa]
 - Stripe API [Credit: Alyssa]
+
+# Team Members
+- Alyssa Jin @alysatsjin
+- Melvin Leck @melvinlec
+- Kevin Tan @cktan21
+- Jun Wei @Tritanomatic
