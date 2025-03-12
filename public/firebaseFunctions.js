@@ -1,3 +1,4 @@
+require('dotenv').config()
 // Import the functions you need from the SDKs you need
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -6,13 +7,13 @@
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBQuzhT9kh6CvwzIE-diZ21XzKB8N_Ypz8",
-  authDomain: "wad2-3b994.firebaseapp.com",
-  databaseURL: "https://wad2-3b994-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "wad2-3b994",
-  storageBucket: "wad2-3b994.firebasestorage.app",
-  messagingSenderId: "841306816388",
-  appId: "1:841306816388:web:1e089a4bdb598e5d7227d1"
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  databaseURL: process.env.databaseURL,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId
 };
 
 // Initialize Firebase
@@ -377,7 +378,7 @@ function capitalizeWords(str) {
 }
 
 async function getLocationName(lat, lon) {
-  const apiKey = 'AIzaSyDacCc9DnnoMNKLMRZC9IaGIoj20FnB4qs'; // Replace with your Google Maps API key
+  const apiKey = process.env.locationAPIKey; // Replace with your Google Maps API key
   const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lon}&key=${apiKey}`;
 
   return new Promise((resolve, reject) => {
@@ -397,7 +398,7 @@ async function getLocationName(lat, lon) {
 }
 
 async function getLatLong(location) {
-  const apiKey = 'AIzaSyDacCc9DnnoMNKLMRZC9IaGIoj20FnB4qs'; // Replace with your Google API key
+  const apiKey = process.env.locationAPIKey; // Replace with your Google API key
   const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(location)}&key=${apiKey}`;
 
   return new Promise((resolve, reject) => {

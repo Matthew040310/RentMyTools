@@ -26,7 +26,7 @@
 //comment out evreyth below
 // const express = require('express');
 // const cors = require('cors');
-// const stripe = require('stripe')("sk_test_51QBg3pAoJOBBnKa5p5ckfY9y3IxVsv09EX34nobHS7LtCIKt8PY1NP5oPNvzyJEaroWmZwW7Co9KQJB6BhDZlvtH004FnfosZH")
+// const stripe = require('stripe')(process.env.stripeAPIKey)
 
 // const app = express()
 // var path = require('path')
