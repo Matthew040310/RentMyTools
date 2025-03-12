@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "WAD2 Website Hosting"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "WAD2 Website Hosting-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
